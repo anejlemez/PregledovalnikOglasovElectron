@@ -3,17 +3,83 @@
 <head>
   <meta charset="utf-8" />
   <title>Pregledovalnik oglasov</title>
-
   <link rel="stylesheet" href="styles-light.css">
 </head>
 <body>
   <header class="topbar">
-    <h1>Pregledovalnik oglasov</h1>
-    <button id="btnSettings">Nastavitve</button>
+    <div class="topbar-left">
+      <h1>AutoPregled</h1>
+    </div>
+    <div class="topbar-actions">
+      <button id="btnLoad" class="btn-secondary">Naloži podatke</button>
+      <button id="btnSettings" class="btn-secondary">Nastavitve</button>
+    </div>
   </header>
 
-  <main>
-    <section id="adsContainer" class="list"></section>
+  <main class="main-container">
+    <aside class="sidebar">
+      <div class="search-section">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Iskanje po imenu...">
+        </div>
+      </div>
+
+      <div class="filters-section">
+        <h3>Filtri</h3>
+        
+        <div class="filter-group">
+          <label class="filter-title">Znamka</label>
+          <select id="filterBrand">
+            <option value="">Vse znamke</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-title">Gorivo</label>
+          <select id="filterFuel">
+            <option value="">Vse vrste</option>
+            <option value="Dizel">Dizel</option>
+            <option value="Bencin">Bencin</option>
+            <option value="Hibrid">Hibrid</option>
+            <option value="Elektriko">Elektriko</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-title">Menjalnik</label>
+          <select id="filterTransmission">
+            <option value="">Vse vrste</option>
+            <option value="Ročni">Ročni</option>
+            <option value="Avtomatski">Avtomatski</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-title">Letnik od</label>
+          <input type="number" id="filterYearFrom" placeholder="od">
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-title">Letnik do</label>
+          <input type="number" id="filterYearTo" placeholder="do">
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-title">Cena do (€)</label>
+          <input type="number" id="filterMaxPrice" placeholder="Maksimalno">
+        </div>
+
+        <button id="btnResetFilters" class="btn-reset">Očisti filtri</button>
+      </div>
+
+      <div class="ads-count">
+        <strong id="adsCount">0 oglasov</strong>
+      </div>
+    </aside>
+
+    <section class="content">
+      <section id="adsContainer" class="list"></section>
+    </section>
   </main>
 
   <script src="renderer.js"></script>

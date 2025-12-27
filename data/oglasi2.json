@@ -1,0 +1,24 @@
+[
+  {
+    "naziv": "Volkswagen Golf 1.6 TDI",
+    "cena": 8900,
+    "letnik": 2016,
+    "kilometri": 175000,
+    "gorivo": "Dizel",
+    "znamka": "Volkswagen",
+    "model": "Golf",
+    "menjalnik": "Ročni",
+    "slika": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2020_Volkswagen_Golf_Style_1.5_Front.jpg/1200px-2020_Volkswagen_Golf_Style_1.5_Front.jpg"
+  },
+  {
+    "naziv": "Renault Clio 1.2 16V",
+    "cena": 6900,
+    "letnik": 2015,
+    "kilometri": 98000,
+    "gorivo": "Bencin",
+    "znamka": "Renault",
+    "model": "Clio",
+    "menjalnik": "Ročni",
+    "slika": "https://upload.wikimedia.org/wikipedia/commons/8/88/Nouvelle_Renault_Clio_E-Tech_full_hybrid.png"
+  }
+]

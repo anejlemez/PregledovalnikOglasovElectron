@@ -1,0 +1,24 @@
+[
+  {
+    "naziv": "Škoda Octavia 2.0 TDI",
+    "cena": 11900,
+    "letnik": 2017,
+    "kilometri": 130000,
+    "gorivo": "Dizel",
+    "znamka": "Škoda",
+    "model": "Octavia",
+    "menjalnik": "Ročni",
+    "slika": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTowW4zgOIwrKqqXnAZ84x87oO9NK7C98SpTw&s"
+  },
+  {
+    "naziv": "Toyota Yaris Hybrid",
+    "cena": 10400,
+    "letnik": 2018,
+    "kilometri": 90000,
+    "gorivo": "Hibrid",
+    "znamka": "Toyota",
+    "model": "Yaris",
+    "menjalnik": "Avtomatski",
+    "slika": "https://www.motorfinity.uk/photos/Yaris_Blog_1732619536.jpg"
+  }
+]

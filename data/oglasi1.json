@@ -1,0 +1,24 @@
+[
+  {
+    "naziv": "Audi A4 2.0 TDI",
+    "cena": 12900,
+    "letnik": 2018,
+    "kilometri": 145000,
+    "gorivo": "Dizel",
+    "znamka": "Audi",
+    "model": "A4",
+    "menjalnik": "Ročni",
+    "slika": "https://assets.adac.de/image/upload/v1/Autodatenbank/Fahrzeugbilder/im05628-1-audi-a4.jpg"
+  },
+  {
+    "naziv": "BMW 320d xDrive",
+    "cena": 15900,
+    "letnik": 2019,
+    "kilometri": 120000,
+    "gorivo": "Dizel",
+    "znamka": "BMW",
+    "model": "320d",
+    "menjalnik": "Avtomatski",
+    "slika": "https://th.bing.com/th/id/OIP.kXUX0qyJyL8EbvX_nCrtwwHaFj?w=245&h=184&c=7&r=0&o=7&pid=1.7&rm=3"
+  }
+]
