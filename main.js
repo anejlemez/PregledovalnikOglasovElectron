@@ -1,3 +1,5 @@
+const path = require("path");
+
 const { app, BrowserWindow, ipcMain } = require("electron");
 
 let mainWindow;
@@ -8,7 +10,7 @@ function createWindow() {
     width: 900,
     height: 650,
     webPreferences: {
-      preload: __dirname + "/preload.js"
+    preload: path.join(__dirname, "preload.js")
     }
   });
 
@@ -22,7 +24,7 @@ ipcMain.on("open-settings", () => {
     parent: mainWindow,
     modal: true,
     webPreferences: {
-      preload: __dirname + "/preload.js"
+      preload: path.join(__dirname, "preload-settings.js")
     }
   });
 
