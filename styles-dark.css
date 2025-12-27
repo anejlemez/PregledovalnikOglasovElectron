@@ -1,0 +1,41 @@
+body { margin: 0; font-family: system-ui, Arial; background: #1e1e1e; color: #f1f1f1; }
+
+.topbar {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 16px;
+  background: #2b2b2b;
+  border-bottom: 1px solid #444;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background: #333;
+  color: #f1f1f1;
+}
+
+.layout { padding: 16px; }
+
+.list { display: grid; gap: 12px; }
+
+.card {
+  display: grid; grid-template-columns: 140px 1fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 12px;
+  background: #2b2b2b;
+  border: 1px solid #444;
+  border-radius: 12px;
+}
+
+.thumb {
+  width: 140px; height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #444;
+}
+
+.meta { color: #bbb; font-size: 12px; }
+.price { font-weight: 800; }
