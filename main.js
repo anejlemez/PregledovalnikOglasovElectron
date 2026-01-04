@@ -43,8 +43,12 @@ ipcMain.on("open-settings", () => {
 
 ipcMain.on("set-theme", (_, theme) => {
   currentTheme = theme;
-  mainWindow.webContents.send("theme-changed", theme);
+  BrowserWindow.getAllWindows().forEach(win => {
+    win.webContents.send("theme-changed", theme);
+  });
 });
+
+ipcMain.handle("theme:get", () => currentTheme);
 
 // Naloži JSON preko dialoga
 ipcMain.handle("ads:loadFromDialog", async () => {
